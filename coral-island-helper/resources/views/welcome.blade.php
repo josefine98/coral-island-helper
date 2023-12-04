@@ -13,8 +13,8 @@
         @livewireStyles
     </head>
     <body class="frontpage">
-    <img src="{{ URL::to('/') }}/images/Coral_Island_logo.webp" alt="">
-    <h1>jeg er en ondskabsfuld cirkel muahahahha</h1>
+        <img src="{{ URL::to('/') }}/images/Coral_Island_logo.webp" alt="">
+        <h1>jeg er en ondskabsfuld cirkel muahahahha</h1>
         <a href="{{ url('offerings') }}">Offerings</a>
         @livewireScripts
     </body>

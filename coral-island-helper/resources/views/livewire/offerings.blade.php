@@ -1,21 +1,35 @@
 
-<div>
+<section class="offerings">
     <a href="{{ url('/') }}">tilbage</a>
-    <h1>hej banana</h1>
+    <h1>Lake Temple</h1>
     @foreach ($altars as $altar)
-        <h2>{{ $altar['offeringGroupTitle'] }}</h2>
-        @foreach ($altar['offerings'] as $test)
-            <h3>{{ $test['title'] }}</h3>
-            <p>Reward name: {{ $test['rewards']['items'][0]['item']['displayName'] }}</p>
-            @if($test['numOfItemRequired'] != -1)
-                <p>Number of items required: {{ $test['numOfItemRequired'] }}</p>
-            @endif
-            <p>Reward amount: {{ $test['rewards']['items'][0]['amount'] }}</p>
-            <img src="{{ URL::to('/') }}/images/icons/{{ $test['rewards']['items'][0]['item']['iconName'] }}.webp" alt="">
-        @endforeach
+        <section>
+            <h2>{{ $altar['offeringGroupTitle'] }}</h2>
+            <p>{{ $altar['offeringGroupRewardText'] }}</p>
+            @foreach ($altar['offerings'] as $category)
+            <section>
+                <h3>{{ $category['title'] }}</h3>
+                <p>Reward name: {{ $category['rewards']['items'][0]['item']['displayName'] }}</p>
 
-        <p><?php  echo '<pre>'; print_r($altar); echo '</pre>'; ?> </p>
+                @if($category['numOfItemRequired'] != -1)
+                    <p>Number of items required: {{ $category['numOfItemRequired'] }}</p>
+                @endif
 
+                <p>Reward amount: {{ $category['rewards']['items'][0]['amount'] }}</p>
+                <img src="{{ URL::to('/') }}/images/icons/{{ $category['rewards']['items'][0]['item']['iconName'] }}.webp" alt="">
+                <h4>Required items</h4>
+                <section>
+                @foreach ($category['requiredItems'] as $item)
+                    <h5>{{ $item['amount']}} {{ $item['item']['displayName']}}</h5>
+                    <img src="{{ URL::to('/') }}/images/icons/{{ $item['item']['iconName'] }}.webp" alt="">
+                    @if($item['quality'] != 'base')
+                        <p>Quality: {{ $item['quality']}}</p>
+                    @endif
+                @endforeach
+                </section>
+                </section>
+            @endforeach
+        </section>
     @endforeach
-
-</div> 
+</section>
+        <!--<p><?php  echo '<pre>'; print_r($altar); echo '</pre>'; ?> </p>-->
