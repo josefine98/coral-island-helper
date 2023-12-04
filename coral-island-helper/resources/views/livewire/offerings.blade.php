@@ -8,6 +8,7 @@
             <p>{{ $altar['offeringGroupRewardText'] }}</p>
             @foreach ($altar['offerings'] as $category)
             <section>
+            <img src="{{ URL::to('/') }}/images/offering/{{ $category['imageName'] }}.png" alt="">
                 <h3>{{ $category['title'] }}</h3>
                 <p>Reward name: {{ $category['rewards']['items'][0]['item']['displayName'] }}</p>
 
