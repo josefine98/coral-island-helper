@@ -13,9 +13,19 @@
         @livewireStyles
     </head>
     <body class="frontpage">
-        <img src="{{ URL::to('/') }}/images/Coral_Island_logo.webp" alt="">
-        <h1>jeg er en ondskabsfuld cirkel muahahahha</h1>
-        <a href="{{ url('offerings') }}">Offerings</a>
-        @livewireScripts
+        <img src="{{ URL::to('/') }}/images/Lily_default-spring.webp" alt="">
+        <div class="content">
+            <img src="{{ URL::to('/') }}/images/Coral_Island_logo.webp" alt="">
+            <h1>Lake temple helper</h1>
+            <a href="{{ url('offerings') }}">Offerings</a>
+            <div class="animals">
+                <img src="{{ URL::to('/') }}/images/Bonbon_full_-_default.webp" alt="">
+                <img src="{{ URL::to('/') }}/images/Grantle.webp" alt="">
+                <img src="{{ URL::to('/') }}/images/Grog_default-spring.webp" alt="">
+                <img src="{{ URL::to('/') }}/images/Peanut_happy-spring.webp" alt="">
+                <img src="{{ URL::to('/') }}/images/Taco_default-spring.webp" alt="">
+            </div>
+        </div>
+        <img src="{{ URL::to('/') }}/images/Sunny_default-spring.webp" alt="">
     </body>
 </html>

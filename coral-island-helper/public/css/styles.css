@@ -1,24 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+:root {
+    --light-blue: #E6F3FA; 
+}
+
 body {
     background-color: rgb(213, 241, 251);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300; 
+}
+
+h1, 
+h2, 
+h3,
+h4, 
+h5 {
+    font-weight: 400; 
+}
+
+h1 {
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 .frontpage {
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.frontpage img {
+    width: 200px;
+    height: 600px;
+    object-fit: contain;
+}
+
+
+.frontpage .content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.frontpage .content img {
+    width: 30vw;
+    height: 400px;
+}
+
 .frontpage h1 {
     color: black;
-    background-color: orange;
-    border-radius: 50%;
-    padding: 300px 40px;
+    font-size: 100px;
+    margin: 0 0 30px 0;
 }
+
 .frontpage a {
+    background-color: white; 
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    width: 20%; 
     padding: 20px;
-    background-color: whitesmoke;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 1s;
+    text-decoration: none;
+    text-align: center;
+}
+
+.frontpage a:hover {
+    background-color: rgb(234, 248, 253); 
+}
+
+.frontpage .animals {
+    display: flex;
+}
+
+.frontpage .animals img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.offerings .back-to-frontpage {
+    display: flex; 
+    background-color: rgb(241, 251, 255);
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 0 50px; 
+    transition: 1s;
+}
+
+.offerings .back-to-frontpage:hover {
+    background-color: white;
+}
+
+.offerings .back-to-frontpage a {
     text-decoration: none;
     color: black;
-    text-align: center;
-    width: 10vw;
 }
+
+
+.offerings h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0;
+}
+
+.offerings .altar-nav {
+    width: 100%; 
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+.offerings .altar-btn {
+    background-color: white; 
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    width: 20%; 
+    padding: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 1s;
+    /* border: 2px solid white; */
+}
+
+.offerings .altar-btn:hover {
+    background-color: rgb(234, 248, 253); 
+}
+
+
+.offerings .altar-btn.active {
+    background-color: rgb(234, 248, 253); 
+}
+
+.offerings .altar {
+    display: none;
+}
+
+.offerings .altar-reward {
+    text-align: center;
+    margin: 50px 0 80px;
+}
+
+.offerings .altar:first-of-type {
+    display: block;
+}
+
+.offerings .altar-categories {
+    display: flex; 
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.offerings .altar-category {
+    flex-basis: calc(33% - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offerings .category-reward {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.offerings .category-reward img {
+    height: 50px;
+}
+
+.offerings .category-icon {
+    width: 100px;
+}
+
+.offerings .items {
+    width: 100%; 
+    margin-bottom: 75px; 
+}
+
+.offerings .items div.item:nth-child(odd) {
+    background-color: var(--light-blue); 
+}
+
+.offerings .item {
+    display: flex;
+    padding: 5px 15px;
+    gap: 10px;
+    align-items: center;
+}
+
+.offerings div.item-icons {
+    position: relative;
+}
+
+.offerings .item .item-icon {
+    height: 60px; 
+}
+
+.offerings .item .item-quality-icon {
+    position: absolute; 
+    height: 25px; 
+}
+
+.offerings input[type='checkbox'] {
+    width: 30px; 
+    height: 30px; 
+    background-color: white;
+}   
