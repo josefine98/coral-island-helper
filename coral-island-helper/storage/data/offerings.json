@@ -526,7 +526,11 @@
               "item": {
                 "id": "item_72005",
                 "displayName": "Pink snapper",
-                "iconName": "Pink_Snapper_Sprite"
+                "iconName": "Pink_Snapper_Sprite",
+                "location": "Ocean (Dock), Cavern (Wind Mine)",
+                "season": "Surface: Spring, Winter - Cavern: Any",
+                "weather": "Any",
+                "timeOfDay": "Surface: Afternoon, Evening - Cavern: All day"
               },
               "amount": 1,
               "quality": "base"
@@ -535,7 +539,11 @@
               "item": {
                 "id": "item_72016",
                 "displayName": "Lionfish",
-                "iconName": "Lionfish_Sprite"
+                "iconName": "Lionfish_Sprite",
+                "location": "Ocean (Beach, Forest)",
+                "season": "Spring, Summer",
+                "weather": "Any",
+                "timeOfDay": "Morning, Afternoon, Evening"
               },
               "amount": 1,
               "quality": "base"
@@ -544,7 +552,11 @@
               "item": {
                 "id": "item_72024",
                 "displayName": "Asian sheepshead",
-                "iconName": "Asian_Sheepshead_Sprite"
+                "iconName": "Asian_Sheepshead_Sprite",
+                "location": "Ocean (Forest)",
+                "season": "Winter",
+                "weather": "Any",
+                "timeOfDay": "All day"
               },
               "amount": 1,
               "quality": "base"
@@ -553,7 +565,11 @@
               "item": {
                 "id": "item_72027",
                 "displayName": "Yellowfin tuna",
-                "iconName": "Yellowfin_tuna_Sprite"
+                "iconName": "Yellowfin_tuna_Sprite",
+                "location": "Ocean (Dock, Beach)",
+                "season": "Winter",
+                "weather": "Rain, Storm, Snow, Blizzard",
+                "timeOfDay": "Afternoon, Evening"
               },
               "amount": 1,
               "quality": "base"
@@ -562,7 +578,11 @@
               "item": {
                 "id": "item_73005",
                 "displayName": "Sardine",
-                "iconName": "Sardines_Sprite"
+                "iconName": "Sardines_Sprite",
+                "location": "Ocean (Beach, Lookout)",
+                "season": "Summer, Fall",
+                "weather": "Any",
+                "timeOfDay": "Evening, Night"
               },
               "amount": 1,
               "quality": "silver"
@@ -591,7 +611,11 @@
               "item": {
                 "id": "item_73007",
                 "displayName": "Sturgeon",
-                "iconName": "Sturgeon_Sprite"
+                "iconName": "Sturgeon_Sprite",
+                "location": "River (Farm), Lake",
+                "season": "Summer, Fall, Winter",
+                "weather": "Rain, Storm, Snow, Blizzard",
+                "timeOfDay": "Evening, Night"
               },
               "amount": 1,
               "quality": "base"
@@ -600,7 +624,11 @@
               "item": {
                 "id": "item_71008",
                 "displayName": "Gator gar",
-                "iconName": "Gator_Gar_Sprite"
+                "iconName": "Gator_Gar_Sprite",
+                "location": "River (Forest), Lake",
+                "season": "Spring 3-28",
+                "weather": "Rain, Storm",
+                "timeOfDay": "Morning, Noon"
               },
               "amount": 1,
               "quality": "base"
@@ -609,7 +637,11 @@
               "item": {
                 "id": "item_71017",
                 "displayName": "Arapaima",
-                "iconName": "Arapaima_Sprite"
+                "iconName": "Arapaima_Sprite",
+                "location": "River (Forest)",
+                "season": "Fall, Winter",
+                "weather": "Rain, Storm, Snow, Blizzard",
+                "timeOfDay": "All Day"
               },
               "amount": 1,
               "quality": "base"
@@ -618,7 +650,11 @@
               "item": {
                 "id": "item_73004",
                 "displayName": "Giant sea bass",
-                "iconName": "Giant_Sea_Bass_Sprite"
+                "iconName": "Giant_Sea_Bass_Sprite",
+                "location": "Ocean (Forest)",
+                "season": "Fall 1-7",
+                "weather": "Any",
+                "timeOfDay": "Morning, Night"
               },
               "amount": 1,
               "quality": "base"
@@ -627,7 +663,11 @@
               "item": {
                 "id": "item_74003",
                 "displayName": "Yellow moray eel",
-                "iconName": "Yellow_Moray_Eel_Sprite"
+                "iconName": "Yellow_Moray_Eel_Sprite",
+                "location": "Ocean (Beach)",
+                "season": "Spring 15 - 28, Summer 15 - 28",
+                "weather": "Any",
+                "timeOfDay": "Evening, Night"
               },
               "amount": 1,
               "quality": "base"
@@ -656,7 +696,11 @@
               "item": {
                 "id": "item_131008",
                 "displayName": "Pipevine swallowtail butterfly",
-                "iconName": "Pipevine_Swallowtail_Butterfly_Sprite"
+                "iconName": "Pipevine_Swallowtail_Butterfly_Sprite",
+                "location": "Forest (Farm, Low), Garden Lane, Lake, Woodlands, Deep Forest",
+                "season": "Any",
+                "weather": "Sunny, Windy, Rain, Storm",
+                "timeOfDay": "Day"
               },
               "amount": 1,
               "quality": "base"
@@ -665,7 +709,11 @@
               "item": {
                 "id": "item_131004",
                 "displayName": "Tiger beetle",
-                "iconName": "Tiger_Beetle_Sprite"
+                "iconName": "Tiger_Beetle_Sprite",
+                "location": "Beach, Garden Lane, Lake, Lookout, Town, Woodlands",
+                "season": "Spring",
+                "weather": "Any",
+                "timeOfDay": "Day"
               },
               "amount": 1,
               "quality": "base"
@@ -674,7 +722,11 @@
               "item": {
                 "id": "item_132001",
                 "displayName": "Yucca moth",
-                "iconName": "Yucca_Moth_Sprite"
+                "iconName": "Yucca_Moth_Sprite",
+                "location": "Beach, Town, Hot Spring",
+                "season": "Spring, Summer",
+                "weather": "Any",
+                "timeOfDay": "Day"
               },
               "amount": 1,
               "quality": "base"
@@ -683,7 +735,11 @@
               "item": {
                 "id": "item_133001",
                 "displayName": "Assam silk moth",
-                "iconName": "Assam_silk_moth_Sprite"
+                "iconName": "Assam_silk_moth_Sprite",
+                "location": "Forest (Farm, High), Garden Lane, Hot Spring, Lookout, Vineyard",
+                "season": "Spring, Fall",
+                "weather": "Sunny, Rain, Windy",
+                "timeOfDay": "Day"
               },
               "amount": 1,
               "quality": "base"
@@ -692,7 +748,11 @@
               "item": {
                 "id": "item_134005",
                 "displayName": "Monarch caterpillar",
-                "iconName": "Monarch_Caterpillar_Sprite"
+                "iconName": "Monarch_Caterpillar_Sprite",
+                "location": "Beach, Garden Lane, Woodlands, Deep Forest",
+                "season": "Fall, Winter",
+                "weather": "Sunny, Rain, Windy, Snow",
+                "timeOfDay": "Day"
               },
               "amount": 1,
               "quality": "base"
@@ -721,7 +781,11 @@
               "item": {
                 "id": "item_131006",
                 "displayName": "Firefly",
-                "iconName": "Firefly_Sprite"
+                "iconName": "Firefly_Sprite",
+                "location": "Forest (Farm, High, Low), Garden Lane, Lake, Woodlands, Deep Forest",
+                "season": "Spring, Summer",
+                "weather": "Sunny",
+                "timeOfDay": "Night"
               },
               "amount": 1,
               "quality": "base"
@@ -730,7 +794,11 @@
               "item": {
                 "id": "item_131007",
                 "displayName": "Cecropia caterpillar",
-                "iconName": "Cecropia_Caterpillar_Sprite"
+                "iconName": "Cecropia_Caterpillar_Sprite",
+                "location": "Forest (Low, Mid), Garden Lane, Lake, Lookout, Vineyard",
+                "season": "Spring, Summer",
+                "weather": "Sunny, Windy",
+                "timeOfDay": "Night"
               },
               "amount": 1,
               "quality": "base"
@@ -739,7 +807,11 @@
               "item": {
                 "id": "item_132012",
                 "displayName": "Centipede",
-                "iconName": "Centipede_Sprite"
+                "iconName": "Centipede_Sprite",
+                "location": "Beach, Forest (Higher), Garden Lane, Town, Vineyard, Woodlands",
+                "season": "Any",
+                "weather": "Sunny, Windy",
+                "timeOfDay": "Night"
               },
               "amount": 1,
               "quality": "base"
@@ -748,7 +820,11 @@
               "item": {
                 "id": "item_133003",
                 "displayName": "Rove beetle",
-                "iconName": "Rove_Beetle_Sprite"
+                "iconName": "Rove_Beetle_Sprite",
+                "location": "Garden Lane, Vineyard",
+                "season": "Fall, Winter",
+                "weather": "Sunny, Rain, Storm",
+                "timeOfDay": "Night"
               },
               "amount": 1,
               "quality": "base"
@@ -757,7 +833,11 @@
               "item": {
                 "id": "item_134001",
                 "displayName": "Atlas moth",
-                "iconName": "Atlas_Moth_Sprite"
+                "iconName": "Atlas_Moth_Sprite",
+                "location": "Forest (Mid, Low)",
+                "season": "Fall, Winter",
+                "weather": "Sunny, Windy",
+                "timeOfDay": "Evening, Night"
               },
               "amount": 1,
               "quality": "base"
@@ -786,7 +866,10 @@
               "item": {
                 "id": "item_72046",
                 "displayName": "Cannonball jellyfish",
-                "iconName": "CannonBall_Jellyfish_Sprite"
+                "iconName": "CannonBall_Jellyfish_Sprite",
+                "location": "Ocean 10-20m: Jellyfish Area, Mid Area",
+                "season": "Spring, Summer, Fall",
+                "timeOfDay": "Any"
               },
               "amount": 1,
               "quality": "base"
@@ -795,7 +878,10 @@
               "item": {
                 "id": "item_72043",
                 "displayName": "Hermit crab",
-                "iconName": "Hermit_Crab_Sprite"
+                "iconName": "Hermit_Crab_Sprite",
+                "location": "Ocean 20-30m: Kelp Forest Area, Herding Area, Mid Area",
+                "season": "Any",
+                "timeOfDay": "All day"
               },
               "amount": 1,
               "quality": "base"
@@ -804,7 +890,10 @@
               "item": {
                 "id": "item_72058",
                 "displayName": "Sexy shrimp",
-                "iconName": "Sexy_Shrimp_Sprite"
+                "iconName": "Sexy_Shrimp_Sprite",
+                "location": "Ocean 40-50m: Unnamed Area 1, Mid Area",
+                "season": "Any",
+                "timeOfDay": "Day"
               },
               "amount": 1,
               "quality": "base"
@@ -813,7 +902,10 @@
               "item": {
                 "id": "item_72063",
                 "displayName": "Sunflower sea star",
-                "iconName": "Sunflower_sea_star_Sprite"
+                "iconName": "Sunflower_sea_star_Sprite",
+                "location": "Ocean 50-60m: Unnamed Zone 1, Unnamed Zone 5",
+                "season": "Spring, Summer",
+                "timeOfDay": "All day"
               },
               "amount": 1,
               "quality": "base"
@@ -822,7 +914,10 @@
               "item": {
                 "id": "item_72048",
                 "displayName": "Pom-pom crab",
-                "iconName": "Pom-pom_crab_Sprite"
+                "iconName": "Pom-pom_crab_Sprite",
+                "location": "Ocean 10-20m: Orchestra Area, Herding Area",
+                "season": "Spring, Summer",
+                "timeOfDay": "All Day"
               },
               "amount": 1,
               "quality": "base"
