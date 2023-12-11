@@ -43,9 +43,54 @@
                             @endif
                             <img class="item-icon" src="{{ URL::to('/') }}/images/icons/{{ $item['item']['iconName'] }}.webp" alt="">
                         </div>
-                        <h5>{{ $item['amount']}} {{ $item['item']['displayName']}}</h5>
-                    </div>
+                        <div>
+                            <h5>{{ $item['amount']}} {{ $item['item']['displayName']}}</h5>
 
+                            <div class="how-to-find">
+                                @if(array_key_exists('location', $item['item']))
+                                <div>
+                                    <p>Location:</p>
+                                    <p>{{ $item['item']['location'] }}</p>
+                                </div>
+                                @endif
+
+                                @if(array_key_exists('season', $item['item']))
+                                <div>
+                                    <p>Season:</p>
+                                    <p>{{ $item['item']['season'] }}</p>
+                                </div>
+                                @endif
+
+                                @if(array_key_exists('weather', $item['item']))
+                                <div>
+                                    <p>Weather:</p>
+                                    <p>{{ $item['item']['weather'] }}</p>
+                                </div>
+                                @endif
+
+                                @if(array_key_exists('timeOfDay', $item['item']))
+                                <div>
+                                    <p>Time of day:</p>
+                                    <p>{{ $item['item']['timeOfDay'] }}</p>
+                                </div>
+                                @endif
+
+                                @if(array_key_exists('growthTime', $item['item']))
+                                <div>
+                                    <p>Growth time:</p>
+                                    <p>{{ $item['item']['growthTime'] }}</p>
+                                </div>
+                                @endif
+
+                                @if(array_key_exists('unlockRequirements', $item['item']))
+                                <div>
+                                    <p>Unlock requirements:</p>
+                                    <p>{{ $item['item']['unlockRequirements'] }}</p>
+                                </div>
+                                @endif
+                            </div>
+                        </div>
+                    </div>
                     @endforeach
                 </section>
             </section>

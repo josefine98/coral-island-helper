@@ -196,11 +196,14 @@ h1 {
     background-color: var(--light-blue); 
 }
 
+.offerings h5 {
+    margin-bottom: 0; 
+}
+
 .offerings .item {
     display: flex;
     padding: 5px 15px;
     gap: 10px;
-    align-items: center;
 }
 
 .offerings div.item-icons {
@@ -220,4 +223,28 @@ h1 {
     width: 30px; 
     height: 30px; 
     background-color: white;
+    margin-top: 15px;
 }   
+
+.offerings .img-title {
+    display: flex;
+    gap: 10px;
+}
+
+.offerings .how-to-find {
+    font-size: 13px;
+}
+
+.offerings .how-to-find div {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.offerings .how-to-find div p {
+    margin: 0;
+}
+
+.offerings .how-to-find div p:first-of-type {
+    font-weight: 600;
+}
