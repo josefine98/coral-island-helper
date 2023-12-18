@@ -43,7 +43,7 @@
                             @endif
                             <img class="item-icon" src="{{ URL::to('/') }}/images/icons/{{ $item['item']['iconName'] }}.webp" alt="">
                         </div>
-                        <div>
+                        <div class="item-text">
                             <h5>{{ $item['amount']}} {{ $item['item']['displayName']}}</h5>
 
                             <div class="how-to-find">

@@ -248,3 +248,7 @@ h1 {
 .offerings .how-to-find div p:first-of-type {
     font-weight: 600;
 }
+
+.offerings .item-text {
+    width: 100%; 
+}
