@@ -18,6 +18,7 @@
             <img src="{{ URL::to('/') }}/images/Coral_Island_logo.webp" alt="">
             <h1>Lake temple helper</h1>
             <a href="{{ url('offerings') }}">Offerings</a>
+            <a href="{{ url('museum') }}">Museum</a>
             <div class="animals">
                 <img src="{{ URL::to('/') }}/images/Bonbon_full_-_default.webp" alt="">
                 <img src="{{ URL::to('/') }}/images/Grantle.webp" alt="">

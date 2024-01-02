@@ -15,9 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 
 use App\Livewire\Offerings;
+use App\Livewire\Museum;
+
 
 Route::get('/', function () {
    return view('welcome');
 });
 
 Route::get('offerings', Offerings::class);
+Route::get('museum', Museum::class);

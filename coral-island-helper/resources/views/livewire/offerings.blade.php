@@ -11,7 +11,7 @@
         <?php
         $altarKey = $altar['key'];
         ?>
-        <button class="altar-btn <?php echo $altarKey ?>" onclick="openTab('<?php echo $altarKey ?>')">{{ $altar['offeringGroupTitle'] }}</button>
+        <button class="altar-btn <?php echo $altarKey ?>" onclick="openTab('<?php echo $altarKey ?>')">{{ $altar['key'] }}</button>
         @endforeach
     </div>
 

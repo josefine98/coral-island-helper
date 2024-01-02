@@ -3,7 +3,6 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-use App\Http\Controllers\IslandController;
 
 class Offerings extends Component
 {
