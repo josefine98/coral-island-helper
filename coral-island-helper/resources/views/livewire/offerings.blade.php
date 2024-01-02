@@ -6,12 +6,12 @@
     </div>
     <h1>Lake Temple</h1>
 
-    <div class="altar-nav">
+    <div class="nav">
         @foreach ($altars as $altar)
         <?php
         $altarKey = $altar['key'];
         ?>
-        <button class="altar-btn <?php echo $altarKey ?>" onclick="openTab('<?php echo $altarKey ?>')">{{ $altar['key'] }}</button>
+        <button class="nav-btn <?php echo $altarKey ?>" onclick="openTab('<?php echo $altarKey ?>')">{{ $altar['offeringGroupTitle'] }}</button>
         @endforeach
     </div>
 
@@ -102,12 +102,12 @@
 <script>
 
     //tabs
-    document.querySelector('.altar-btn.CropBased').classList.add('active');
+    document.querySelector('.nav-btn.CropBased').classList.add('active');
 
     function openTab(altar) {
         let i;
         let altars = document.getElementsByClassName("altar");
-        let nav = document.getElementsByClassName("altar-btn");
+        let nav = document.getElementsByClassName("nav-btn");
         for (i = 0; i < altars.length; i++) {
             altars[i].style.display = "none";
             nav[i].classList.remove('active');
@@ -115,7 +115,7 @@
 
         let element = document.getElementById(altar);
         element.style.display = "block";
-        let button = document.querySelector(`.altar-btn.${altar}`);
+        let button = document.querySelector(`.nav-btn.${altar}`);
         button.classList.add('active');
     }
 

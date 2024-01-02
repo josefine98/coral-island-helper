@@ -54,6 +54,12 @@ h1 {
     margin: 0 0 30px 0;
 }
 
+.frontpage .frontpage-nav {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
 .frontpage a {
     background-color: white; 
 	color: inherit;
@@ -62,7 +68,6 @@ h1 {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
-    width: 20%; 
     padding: 20px;
     font-weight: 400;
     font-size: 20px;
@@ -86,7 +91,7 @@ h1 {
     object-fit: contain;
 }
 
-.offerings .back-to-frontpage {
+.back-to-frontpage {
     display: flex; 
     background-color: rgb(241, 251, 255);
     height: 75px;
@@ -98,29 +103,29 @@ h1 {
     transition: 1s;
 }
 
-.offerings .back-to-frontpage:hover {
+.back-to-frontpage:hover {
     background-color: white;
 }
 
-.offerings .back-to-frontpage a {
+.back-to-frontpage a {
     text-decoration: none;
     color: black;
 }
 
 
-.offerings h1 {
+.offerings h1, .museum h1 {
     text-align: center;
     font-size: 60px;
     margin-top: 0;
 }
 
-.offerings .altar-nav {
+.nav {
     width: 100%; 
     display: flex; 
     justify-content: space-evenly;
 }
 
-.offerings .altar-btn {
+.nav-btn {
     background-color: white; 
 	color: inherit;
 	border: none;
@@ -128,7 +133,7 @@ h1 {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
-    width: 20%; 
+    width: 15%; 
     padding: 20px;
     font-weight: 400;
     font-size: 20px;
@@ -137,12 +142,12 @@ h1 {
     /* border: 2px solid white; */
 }
 
-.offerings .altar-btn:hover {
+.nav-btn:hover {
     background-color: rgb(234, 248, 253); 
 }
 
 
-.offerings .altar-btn.active {
+.nav-btn.active {
     background-color: rgb(234, 248, 253); 
 }
 
@@ -252,3 +257,40 @@ h1 {
 .offerings .item-text {
     width: 100%; 
 }
+
+.museum .donations {
+    display: none;
+}
+
+.museum .donations:first-of-type {
+    display: flex;
+}
+
+.museum .donations {
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.museum .donations .donation-item {
+    flex-basis: 11%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.museum .donations .donation-item h5 {
+    margin: 5px 0 0 0;
+}
+
+.museum .donations .donation-item:nth-child(2n) {
+    background-color: var(--light-blue)
+}
+
+.museum input[type='checkbox'] {
+    width: 30px; 
+    height: 30px; 
+    background-color: white;
+    margin-top: 15px;
+}   

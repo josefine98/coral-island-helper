@@ -1,24 +1,24 @@
-<section class="offerings">
+<section class="museum">
     <div class="back-to-frontpage">
         <a href="{{ url('/') }}">
             <img src="{{ URL::to('/') }}/images/icons8-arrow-50.png" alt="">
         </a>
     </div>
-    <h1>Museum ?`???</h1>
+    <h1>Museum</h1>
 
-    <div class="altar-nav">
+    <div class="nav">
         @foreach ($donations as $category)
         <?php
         $categoryKey = $category['key'];
         ?>
-        <button class="altar-btn <?php echo $categoryKey ?>" onclick="openTab('<?php echo $categoryKey ?>')">{{ $category['key'] }}</button>
+        <button class="nav-btn <?php echo $categoryKey ?>" onclick="openTab('<?php echo $categoryKey ?>')">{{ $category['key'] }}</button>
         @endforeach
     </div>
     @foreach ($donations as $category)
     <?php $categoryKey = $category['key']; ?>
-    <section class="altar" id="<?php echo $categoryKey ?>">
+    <section class="donations" id="<?php echo $categoryKey ?>">
         @foreach ($category[$categoryKey] as $item)
-            <div>
+            <div class="donation-item">
                 <img class="item-icon" src="{{ URL::to('/') }}/images/icons/{{ $item['iconName'] }}.webp" alt="">
                 <h5>{{ $item['displayName'] }}</h5>
                 <input class="item-checkbox" type="checkbox" id=" {{ $item['iconName']}}" name="checkbox">
@@ -29,20 +29,20 @@
 </section>
 <script>
     //tabs
-    document.querySelector('.altar-btn.Artifacts').classList.add('active');
+    document.querySelector('.nav-btn.Artifacts').classList.add('active');
 
     function openTab(altar) {
         let i;
-        let altars = document.getElementsByClassName("altar");
-        let nav = document.getElementsByClassName("altar-btn");
+        let altars = document.getElementsByClassName("donations");
+        let nav = document.getElementsByClassName("nav-btn");
         for (i = 0; i < altars.length; i++) {
             altars[i].style.display = "none";
             nav[i].classList.remove('active');
         }
 
         let element = document.getElementById(altar);
-        element.style.display = "block";
-        let button = document.querySelector(`.altar-btn.${altar}`);
+        element.style.display = "flex";
+        let button = document.querySelector(`.nav-btn.${altar}`);
         button.classList.add('active');
     }
 
