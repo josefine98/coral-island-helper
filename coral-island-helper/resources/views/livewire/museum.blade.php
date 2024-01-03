@@ -11,7 +11,7 @@
         <?php
         $categoryKey = $category['key'];
         ?>
-        <button class="nav-btn <?php echo $categoryKey ?>" onclick="openTab('<?php echo $categoryKey ?>')">{{ $category['key'] }}</button>
+        <button class="nav-btn <?php echo $categoryKey ?>" onclick="openTab('<?php echo $categoryKey ?>')">{{ $categoryKey }}</button>
         @endforeach
     </div>
     @foreach ($donations as $category)
@@ -31,7 +31,7 @@
     //tabs
     document.querySelector('.nav-btn.Artifacts').classList.add('active');
 
-    function openTab(altar) {
+    function openTab(category) {
         let i;
         let altars = document.getElementsByClassName("donations");
         let nav = document.getElementsByClassName("nav-btn");
@@ -40,15 +40,15 @@
             nav[i].classList.remove('active');
         }
 
-        let element = document.getElementById(altar);
+        let element = document.getElementById(category);
         element.style.display = "flex";
-        let button = document.querySelector(`.nav-btn.${altar}`);
+        let button = document.querySelector(`.nav-btn.${category}`);
         button.classList.add('active');
     }
 
 
 
-    //Saving checkbox checked in local storage 
+    //saving checkboxes checked in local storage 
     let items = Array.from(document.getElementsByClassName('item-checkbox'));
 
     function save() {
@@ -65,5 +65,5 @@
         }
     });
 
-    window.addEventListener('change', save); // Remove the parentheses after save
+    window.addEventListener('change', save);
 </script>

@@ -121,7 +121,7 @@
 
 
 
-    //Saving checkbox checked in local storage 
+    //saving checkboxes checked in local storage 
     let items = Array.from(document.getElementsByClassName('item-checkbox'));
 
     function save() {
@@ -138,9 +138,6 @@
         }
     });
 
-    window.addEventListener('change', save); // Remove the parentheses after save
+    window.addEventListener('change', save);
 
 </script>
-<!--<p><?php echo '<pre>';
-        print_r($altar);
-        echo '</pre>'; ?> </p>-->
